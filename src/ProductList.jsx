@@ -118,7 +118,7 @@ function ProductList({ onHomeClick }) {
                         <div className="product-title">{plant.name}</div> {/* Display plant name */}
                         {/* Display other plant details like description and cost */}
                         <div className="product-description">{plant.description}</div> {/* Display plant description */}
-                        <div className="product-cost">${plant.cost}</div> {/* Display plant cost */}
+                        <div className="product-cost">{plant.cost}</div> {/* Display plant cost */}
                         <button className={`product-button ${isInCart(plant.name) ? 'added-to-cart' : '' } `}
                             onClick={() => handleAddToCart(plant)}>
                                 {isInCart(plant.name)? "Added to Cart" : "Add to Cart"}
